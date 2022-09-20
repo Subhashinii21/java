@@ -1,0 +1,53 @@
+import java.io.*;
+import java.util.*;
+public class Mark
+{
+    public static void main(String[] args)
+    {
+        try {
+            int s1,s2,s3,s4,tot;
+            float agr;
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter sub 1 mark:");
+            s1=sc.nextInt();
+            System.out.println("Enter sub 2 mark:");
+            s2=sc.nextInt();
+            System.out.println("Enter sub 3 mark:");
+            s3=sc.nextInt();
+            System.out.println("Enter sub 4 mark:");
+            s4=sc.nextInt();
+            
+            tot=s1+s2+s3+s4;
+            agr=tot/4;
+            
+            System.out.println("Total="+tot);
+            System.out.println("Agregate="+agr);
+            if(agr>75)
+            {
+                System.out.println("Grade=Distinction");
+            }
+            if(agr>=60&&agr<75)
+            {
+                System.out.println("Grade=First Division");  
+            }
+            if(agr>=50&&agr<50)
+            {
+                System.out.println("Grade=Second division");
+            }
+            if(agr>=40&&agr<50)
+            {
+                System.out.println("Grade=Third division");
+            }
+            else
+            {
+                System.out.println("Grade=Fail");
+            }
+            
+            
+            
+        } catch(Exception e) 
+        {
+            System.out.println("Enter valid input");
+        }
+    }
+}
